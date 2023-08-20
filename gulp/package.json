@@ -1,0 +1,31 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-dependents": "^1.2.5",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-less": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-sftp": "^0.1.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^3.0.0",
+    "sass": "^1.49.9",
+    "vinyl-ftp": "^0.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
