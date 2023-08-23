@@ -16,6 +16,8 @@ add_action(
     }
 );
 
+get_template_part('inc/custom_fields');
+
 add_action('after_setup_theme', function(){
     register_nav_menus( array(
         'header_menu' => 'Header menu',
