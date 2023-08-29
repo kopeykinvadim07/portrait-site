@@ -1,0 +1,44 @@
+@mixin placeholder($params) {
+  &::-webkit-input-placeholder {color:$params};
+  &::-moz-placeholder          {color:$params};
+  &:-moz-placeholder           {color:$params};
+  &:-ms-input-placeholder      {color:$params};
+}
+@mixin placeholder-area($params) {
+  &::-webkit-input-placeholder {color:$params};
+  &::-moz-placeholder          {color:$params};
+  &:-moz-placeholder           {color:$params};
+  &:-ms-textarea-placeholder   {color:$params};
+}
+@mixin bg-grad($from, $to) {
+  background: $to;
+	background: -moz-linear-gradient(top, $from 0%, $to 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+	background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+	background: -o-linear-gradient(top, $from 0%,$to 100%);
+	background: linear-gradient(to bottom, $from 0%,$to 100%);
+}
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@function division($font-size, $line-height) {
+  $result: calc($line-height / $font-size);
+  @return $result;
+} 
+@function size($size, $procent) {
+  $result: calc($size * $procent / 100);
+  @return $result * 1px;
+}
+@each $number in (4, 8, 16, 20, 24, 28, 32) {
+  .mr-#{$number} {
+    margin-right: #{$number}px !important;
+  }
+  .ml-#{$number} {
+    margin-left: #{$number}px !important;
+  }
+  .mb-#{$number} {
+    margin-bottom: #{$number}px !important;
+  }
+}

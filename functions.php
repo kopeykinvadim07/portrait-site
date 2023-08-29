@@ -17,6 +17,7 @@ add_action(
 );
 
 get_template_part('inc/custom_fields');
+get_template_part('inc/enqueue_scripts');
 
 add_action('after_setup_theme', function(){
     register_nav_menus( array(

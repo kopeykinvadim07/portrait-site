@@ -1,0 +1,31 @@
+.input-icon{
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  padding: 10px 10px 10px 70px;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  input{
+    @include placeholder(#acacac);
+  }
+  select{
+    width: 100%;
+    border: 0;
+    height: 100%;
+    color: #acacac;
+  }
+  &__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #b2b2b2;
+    height: 100%;
+    width: 47px;
+    font-size: 18px;
+    border-right: 1px solid #e6e6e6;
+  }
+}
